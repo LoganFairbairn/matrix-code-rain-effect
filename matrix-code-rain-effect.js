@@ -4,7 +4,7 @@ let canvasWidth = 0;
 const maxSymbolSize = 22;
 const minSymbolSize = 10;
 const maxSymbolLength = 26;
-const maxSymbolChains = 24;
+const maxSymbolChains = 40;
 const symbolChains = [];
 let chainPositions = [];
 let filledPositions = [];
@@ -69,13 +69,13 @@ class SymbolParticle {
   render(x, y) {
     let colorVariation = round(1 - this.size / maxSymbolSize) * 100 * 1;
 
-    let r = 221;
-    let g = 141;
-    let b = 70;
+    let r = 0;
+    let g = 190;
+    let b = 50;
     if (this.first == true) {
-      r = 43;
-      g = 219;
-      b = 253;
+      r = 150;
+      g = 200;
+      b = 150;
     }
 
     r -= colorVariation;
